@@ -1,0 +1,66 @@
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	background: #181818;
+}
+
+.container{
+	display: flex;
+	column-gap: 28px;
+}
+
+.icon{
+	display: inline-flex;
+	width: 60px;
+	height: 60px;
+	text-decoration: none;
+	font-size: 25px;
+	outline: 2px solid white;
+	border-radius: 50%;
+	transition-property: outline-offset,outline-color,background-color;
+	transition-duration: 0.25s;
+	color: white;
+}
+
+.icon:hover{
+	outline-offset: 4px;
+}
+
+.icon i{
+	margin: auto;
+}
+
+.icon-instagram:hover{
+	background-color: red;
+	outline-color: red;
+}
+
+.icon-twitter:hover{
+	background-color: blue;
+	outline-color: blue;
+}
+
+.icon-github:hover{
+	background-color: skyblue;
+	outline-color: skyblue;
+}
+
+.icon-codepen:hover{
+	background-color: violet;
+	outline-color: violet;
+}
+
+.icon:hover i{
+	animation: shake 0.25s;
+}
+
+@keyframes shake{
+	10%{
+		transform: rotate(15deg);
+	}
+	20%{
+		transform: rotate(-15deg);
+	}
+}
